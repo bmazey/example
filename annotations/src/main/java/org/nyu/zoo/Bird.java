@@ -1,6 +1,6 @@
 package org.nyu.zoo;
 
-public abstract class Bird {
+public abstract class Bird implements Animal {
 
     /**
      * Abstract classes cannot be instantiated. Traditionally abstract classes have been used to provide default
