@@ -12,7 +12,7 @@ public class ZooApplication {
      * @param args
      */
 
-    @SuppressWarnings("all")
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
 
         /**
