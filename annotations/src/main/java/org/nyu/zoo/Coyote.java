@@ -1,5 +1,6 @@
 package org.nyu.zoo;
 
+
 public class Coyote extends Mammal {
 
     /**

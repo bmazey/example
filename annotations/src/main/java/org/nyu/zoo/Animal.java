@@ -1,5 +1,7 @@
 package org.nyu.zoo;
 
+import java.util.Optional;
+
 public interface Animal {
 
     /**
@@ -16,5 +18,5 @@ public interface Animal {
     String getColor();
     Integer getSize();
     Integer getNumberOfLimbs();
-    String call();
+    Optional<String> call();
 }

@@ -1,5 +1,7 @@
 package org.nyu.zoo;
 
+import java.util.Optional;
+
 public abstract class Bird implements Animal {
 
     /**
@@ -22,8 +24,8 @@ public abstract class Bird implements Animal {
         return 4;
     }
 
-    public String call() {
-        return "cluck!";
+    public Optional<String> call() {
+        return Optional.of("cluck!");
     }
 
     // We could add extra Bird methods here if we wanted to! For example, this method which is unique to all Birds.

@@ -1,5 +1,8 @@
 package org.nyu.zoo;
 
+import java.util.Optional;
+
+@AnimalProperties
 public abstract class Mammal implements Animal {
 
     /**
@@ -22,8 +25,8 @@ public abstract class Mammal implements Animal {
         return 4;
     }
 
-    public String call() {
-        return "grrrrr!";
+    public Optional<String> call() {
+        return Optional.of("grrrrr!");
     }
 
     // We could add extra Mammal methods here if we wanted to! For example, this method which is unique to all Mammals.

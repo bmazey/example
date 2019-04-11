@@ -2,6 +2,7 @@ package org.nyu;
 
 import org.nyu.zoo.*;
 
+import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 
 
@@ -40,7 +41,7 @@ public class ZooApplication {
         System.out.println("Wiley Coyote's color is: " + Wiley.getColor());
 
         Mammal Perry = new Platypus();
-        System.out.println("Perry's call sounds like: " + Perry.call());
+        System.out.println("Perry's call sounds like: " + Perry.call().get());
 
         // notice that canFly() is deprecated! The world may never truly know ...
         Chicken Torchic = new Chicken();
@@ -50,6 +51,11 @@ public class ZooApplication {
         myAnimals.add(Wiley);
         myAnimals.add(Perry);
         myAnimals.add(Torchic);
+
+        Annotation annotation = Wiley.getClass().getAnnotation(AnimalProperties.class);
+        AnimalProperties WileyProperties = (AnimalProperties) annotation;
+
+        System.out.println("Wiley's classification: " + WileyProperties.classification());
 
         Zoo myZoo = new Zoo(myAnimals);
 

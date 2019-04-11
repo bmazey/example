@@ -1,5 +1,7 @@
 package org.nyu.zoo;
 
+import java.util.Optional;
+
 public class Platypus extends Mammal {
 
     /**
@@ -17,7 +19,7 @@ public class Platypus extends Mammal {
     }
 
     @Override
-    public String call() {
-        return "coo-coo!";
+    public Optional<String> call() {
+        return Optional.of("coo-coo!");
     }
 }
