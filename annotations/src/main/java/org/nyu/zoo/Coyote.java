@@ -1,6 +1,7 @@
 package org.nyu.zoo;
 
 
+@AnimalProperties(subClassification = "Canine")
 public class Coyote extends Mammal {
 
     /**

@@ -2,6 +2,7 @@ package org.nyu.zoo;
 
 import java.util.Optional;
 
+@AnimalProperties
 public abstract class Bird implements Animal {
 
     /**

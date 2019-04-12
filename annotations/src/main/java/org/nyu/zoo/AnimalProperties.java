@@ -7,7 +7,6 @@ import java.lang.annotation.*;
 @Inherited
 public @interface AnimalProperties {
 
-    int wings() default 0;
-    String classification() default "none";
+    String subClassification() default "None";
 
 }
