@@ -53,6 +53,11 @@ public class ZooApplication {
 
         System.out.println("Wiley's sub-classification: " + WileyProperties.subClassification());
 
+        Annotation PerryAnnotation = Perry.getClass().getAnnotation(AnimalProperties.class);
+        AnimalProperties PerryProperties = (AnimalProperties) PerryAnnotation;
+
+        System.out.println("Perry's sub-classification: " + PerryProperties.subClassification());
+
         Annotation TorchicAnnotation = Torchic.getClass().getAnnotation(AnimalProperties.class);
         AnimalProperties TorchicProperties = (AnimalProperties) TorchicAnnotation;
 
