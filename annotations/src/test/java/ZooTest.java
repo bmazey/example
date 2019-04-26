@@ -27,7 +27,7 @@ public class ZooTest {
 
     @Test
     public void serializeFrogToJson() throws JsonSerializationException {
-        Frog myFrog = new Frog();
+        Frog myFrog = new Frog("green", "1", "4", "ribbit!");
         ObjectToJsonConverter converter = new ObjectToJsonConverter();
         String frogJson = converter.convertToJson(myFrog);
         System.out.println(frogJson);

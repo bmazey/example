@@ -9,17 +9,23 @@ import java.util.Optional;
 public class Frog {
 
     @JsonElement
-    private String color = "green";
+    private String color;
 
     @JsonElement
-    private String size = "1";
+    private String size;
 
     @JsonElement(key = "limbs")
-    private String numberOfLimbs = "4";
+    private String numberOfLimbs;
 
     @JsonElement
-    private String call = "ribbit!";
+    private String call;
 
+    public Frog(String color, String size, String numberOfLimbs, String call) {
+        this.color = color;
+        this.size = size;
+        this.numberOfLimbs = numberOfLimbs;
+        this.call = call;
+    }
 
     public String getColor() {
         return color;

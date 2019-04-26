@@ -8,4 +8,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface JsonSerializable {
+    // borrowed from: https://www.baeldung.com/java-custom-annotation
 }
