@@ -1,5 +1,6 @@
 package org.nyu.zoo;
 
+import org.nyu.zoo.json.Init;
 import org.nyu.zoo.json.JsonElement;
 import org.nyu.zoo.json.JsonSerializable;
 
@@ -25,6 +26,11 @@ public class Frog {
         this.size = size;
         this.numberOfLimbs = numberOfLimbs;
         this.call = call;
+    }
+
+    @Init
+    private void initCall() {
+        this.call = this.call.toUpperCase();
     }
 
     public String getColor() {
