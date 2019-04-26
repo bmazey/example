@@ -12,14 +12,14 @@ public class Frog {
     @JsonElement
     private String color;
 
-    @JsonElement
-    private String size;
-
     @JsonElement(key = "limbs")
     private String numberOfLimbs;
 
     @JsonElement
     private String call;
+
+    // @JsonElement
+    private String size;
 
     public Frog(String color, String size, String numberOfLimbs, String call) {
         this.color = color;
