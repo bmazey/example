@@ -48,20 +48,20 @@ public class ZooApplication {
         System.out.println("Can Torchic fly? " + Torchic.canFly());
 
         // custom annotation example!
-        Annotation WileyAnnotation = Wiley.getClass().getAnnotation(AnimalProperties.class);
-        AnimalProperties WileyProperties = (AnimalProperties) WileyAnnotation;
-
-        System.out.println("Wiley's sub-classification: " + WileyProperties.subClassification());
-
-        Annotation PerryAnnotation = Perry.getClass().getAnnotation(AnimalProperties.class);
-        AnimalProperties PerryProperties = (AnimalProperties) PerryAnnotation;
-
-        System.out.println("Perry's sub-classification: " + PerryProperties.subClassification());
-
-        Annotation TorchicAnnotation = Torchic.getClass().getAnnotation(AnimalProperties.class);
-        AnimalProperties TorchicProperties = (AnimalProperties) TorchicAnnotation;
-
-        System.out.println("Torchic's sub-classification: " + TorchicProperties.subClassification());
+//        Annotation WileyAnnotation = Wiley.getClass().getAnnotation(AnimalProperties.class);
+//        AnimalProperties WileyProperties = (AnimalProperties) WileyAnnotation;
+//
+//        System.out.println("Wiley's sub-classification: " + WileyProperties.subClassification());
+//
+//        Annotation PerryAnnotation = Perry.getClass().getAnnotation(AnimalProperties.class);
+//        AnimalProperties PerryProperties = (AnimalProperties) PerryAnnotation;
+//
+//        System.out.println("Perry's sub-classification: " + PerryProperties.subClassification());
+//
+//        Annotation TorchicAnnotation = Torchic.getClass().getAnnotation(AnimalProperties.class);
+//        AnimalProperties TorchicProperties = (AnimalProperties) TorchicAnnotation;
+//
+//        System.out.println("Torchic's sub-classification: " + TorchicProperties.subClassification());
 
         // polymorphism again!
         myAnimals.add(Wiley);
