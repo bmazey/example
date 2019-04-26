@@ -16,7 +16,7 @@ public class Zoo {
 
     // constructors
     public Zoo() {
-        this.Animals = new ArrayList<Animal>();
+        this.Animals = new ArrayList<>();
     }
 
     public Zoo(List<Animal> Animals) {
