@@ -14,7 +14,7 @@ public class ZooApplication {
      */
 
     @SuppressWarnings("unchecked")
-    public static void main(String[] args) {
+    public static void main(String [] args) {
 
         /**
          * This is the way we *should* instantiate our Animal list, but we may not want to commit to a generic type at

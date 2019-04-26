@@ -2,6 +2,7 @@ package org.nyu.zoo;
 
 import java.util.Optional;
 
+@AnimalProperties(subClassification = "Monotreme")
 public class Platypus extends Mammal {
 
     /**

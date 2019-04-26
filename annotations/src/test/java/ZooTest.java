@@ -1,6 +1,9 @@
 import org.junit.Test;
 import org.nyu.zoo.Coyote;
+import org.nyu.zoo.Frog;
 import org.nyu.zoo.Platypus;
+import org.nyu.zoo.json.JsonSerializationException;
+import org.nyu.zoo.json.ObjectToJsonConverter;
 
 @SuppressWarnings("all")
 public class ZooTest {
@@ -11,15 +14,23 @@ public class ZooTest {
      */
 
     @Test
-    public static void coyoteShouldBeBrown() {
+    public void coyoteShouldBeBrown() {
         Coyote myCoyote = new Coyote();
         assert myCoyote.getColor().equals("brown");
     }
 
     @Test
-    public static void platypusShouldCoo() {
+    public void platypusShouldCoo() {
         Platypus myPlatypus = new Platypus();
         assert myPlatypus.call().get().equals("coo-coo!");
+    }
+
+    @Test
+    public void serializeFrogToJson() throws JsonSerializationException {
+        Frog myFrog = new Frog();
+        ObjectToJsonConverter converter = new ObjectToJsonConverter();
+        String frogJson = converter.convertToJson(myFrog);
+        System.out.println(frogJson);
     }
 
 }

@@ -1,8 +1,9 @@
 package org.nyu.zoo;
 
+
 import java.util.Optional;
 
-@AnimalProperties(subClassification = "Vertebrate")
+@AnimalProperties
 public abstract class Mammal implements Animal {
 
     /**
