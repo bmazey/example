@@ -23,4 +23,9 @@ public class Platypus extends Mammal {
     public Optional<String> call() {
         return Optional.of("coo-coo!");
     }
+
+    //@Override
+    public boolean equals(Platypus obj) {
+        return true;
+    }
 }

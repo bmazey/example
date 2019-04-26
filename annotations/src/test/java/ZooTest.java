@@ -14,6 +14,13 @@ public class ZooTest {
      */
 
     @Test
+    public void platypusShouldBeEqual() {
+        Object myFirstPlatypus = new Platypus();
+        Object mySecondPlatypus = new Platypus();
+        assert myFirstPlatypus.equals(mySecondPlatypus);
+    }
+
+    @Test
     public void coyoteShouldBeBrown() {
         Coyote myCoyote = new Coyote();
         assert myCoyote.getColor().equals("brown");
